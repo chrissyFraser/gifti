@@ -6,9 +6,15 @@ from django.contrib.auth.models import User
 class BrandName(models.Model):
     brand_name = models.CharField(max_length=100)
 
+    def __str__(self):
+        return self.brand_name
+
 
 class StoreName(models.Model):
     store_name = models.CharField(max_length=100)
+
+    def __str__(self):
+        return self.store_name
 
 
 class Wish(models.Model):
