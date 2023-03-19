@@ -1,7 +1,7 @@
 from django.contrib import admin
-from models import Wish, Brand, Store 
+from gifti.models import Wish, BrandName, StoreName 
 
 # Register your models here.
 admin.site.register(Wish)
-admin.site.register(Brand)
-admin.site.register(Store)
+admin.site.register(BrandName)
+admin.site.register(StoreName)

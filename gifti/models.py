@@ -1,4 +1,5 @@
 from django.db import models
+from django.contrib.auth.models import User
 
 
 
@@ -21,6 +22,7 @@ class Wish(models.Model):
     size = models.CharField(max_length=100, null=True, blank=True)
     notes = models.TextField(max_length=100, null=True, blank=True)
     bought = models.BooleanField()
+    nametag = models.ForeignKey(User, related_name="nametag", on_delete=models.CASCADE, default=0)
 
     def __str__(self):
         return self.brand + self.item
