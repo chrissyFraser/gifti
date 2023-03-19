@@ -48,7 +48,7 @@ class WishDetail(DetailView):
 
 class AddBrand(CreateView, LoginRequiredMixin):
     model = BrandName
-    fields = "brand_name"
+    fields = ["brand_name"]
     template_name = "add_brand.html"
     context_object_name = "addbrandname"
     success_url = reverse_lazy("wishlist")
@@ -56,7 +56,7 @@ class AddBrand(CreateView, LoginRequiredMixin):
 
 class AddStore(CreateView, LoginRequiredMixin):
     model = StoreName
-    fields = "store_name"
+    fields = ["store_name"]
     template_name = "add_store.html"
     context_object_name = "addstore"
     success_url = reverse_lazy("wishlist")
