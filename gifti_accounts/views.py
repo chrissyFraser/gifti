@@ -9,7 +9,7 @@ from django.contrib.auth.models import User
 # Create your views here.
 class SignUp(CreateView):
     model = User
-    success_url = reverse_lazy("home")
+    success_url = reverse_lazy("wishlist")
     template_name = "registration/signup.html"
     form_class = UserCreationForm
 

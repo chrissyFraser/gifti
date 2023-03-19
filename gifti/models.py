@@ -31,5 +31,5 @@ class Wish(models.Model):
     nametag = models.ForeignKey(User, related_name="nametag", on_delete=models.CASCADE, default=0)
 
     def __str__(self):
-        return self.brand + self.item
+        return f"{self.brand.brand_name} {self.item}"
 

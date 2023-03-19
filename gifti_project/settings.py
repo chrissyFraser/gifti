@@ -27,7 +27,7 @@ DEBUG = True
 
 ALLOWED_HOSTS = []
 
-LOGIN_REDIRECT_URL = "home"
+LOGIN_REDIRECT_URL = "wishlist"
 
 LOGOUT_REDIRECT_URL = "login"
 
