@@ -30,6 +30,8 @@ ALLOWED_HOSTS = []
 
 # Application definition
 
+LOGIN_REDIRECT_URL = "home"
+
 INSTALLED_APPS = [
     "gifti.apps.GiftiConfig",
     "gifti_accounts.apps.GiftiAccountsConfig",

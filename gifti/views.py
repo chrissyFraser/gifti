@@ -34,11 +34,11 @@ class CreateWish(LoginRequiredMixin, CreateView):
     context_object_name = "createwish"
     success_url = reverse_lazy("wishlist")
 
-    # def form_valid(self, form):
-    #     item = form.save(commit=False)
-    #     item.username = self.request.user
-    #     item.save()
-    #     return redirect("wishdetail/<int:pk>", args=[self.objects.id])
+    def form_valid(self, form):
+        item = form.save(commit=False)
+        item.nametag = self.request.user
+        item.save()
+        return redirect("wishdetail/<int:pk>", args=[self.objects.id])
 
 class WishDetail(DetailView):
     model = Wish
