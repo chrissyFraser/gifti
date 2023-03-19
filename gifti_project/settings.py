@@ -27,10 +27,10 @@ DEBUG = True
 
 ALLOWED_HOSTS = []
 
-
-# Application definition
-
 LOGIN_REDIRECT_URL = "home"
+
+LOGOUT_REDIRECT_URL = "login"
+
 
 INSTALLED_APPS = [
     "gifti.apps.GiftiConfig",

@@ -14,7 +14,7 @@ class WishList(LoginRequiredMixin, ListView):
     context_object_name = "wishlist"
 
     def get_queryset(self):
-        return Wish.objects.filter(user=self.request.user)
+        return Wish.objects.filter(nametag=self.request.user)
 
 
 class CreateWish(LoginRequiredMixin, CreateView):
