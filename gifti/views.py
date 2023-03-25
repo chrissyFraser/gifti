@@ -45,6 +45,7 @@ class WishDetail(DetailView):
     model = Wish
     template_name = "wish_detail.html"
     context_object_name = "wishdetail"
+    
 
 class AddBrand(CreateView, LoginRequiredMixin):
     model = BrandName

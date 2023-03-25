@@ -4,18 +4,26 @@
 {% block content %}
 <main>
     <h1>Wishlist</h1>
-    <p>{{ nametag }}</p>
     {% for wish in wishlist %}
-        <ul>{{wish.brand}} {{wish.item}}</ul>
-        <ul><img src= {{wish.picture}} width=200px> </ul>
-        <ul><a href={{wish.link}}>Link to Item</a></ul>
-        {% for store_name in wish.store.all %}
-        <ul>{{store_name}}</ul>
-        {% endfor %}
-        <ul>{{wish.color}}</ul>
-        <ul>{{wish.style}}</ul>
-        <ul>{{wish.size}}</ul>
-        <ul>{{wish.notes}}</ul>
+    {% if forloop.first %}
+        <h2>{{wish.nametag}}</h2>
+    {%endif%}
+        <div class="card">
+            <img src= {{wish.picture}} alt="product_photo" width=100%>
+            <div class="container">
+            <ul>{{wish.brand}} {{wish.item}}</ul>
+            <ul> </ul>
+            <ul><a href={{wish.link}}>Link to Item</a></ul>
+            {% for store_name in wish.store.all %}
+            <ul>{{store_name}}</ul>
+            {% endfor %}
+            <ul>{{wish.color}}</ul>
+            <ul>{{wish.style}}</ul>
+            <ul>{{wish.size}}</ul>
+            <ul>{{wish.notes}}</ul>
+            </div>
+        </div>
+        <br><br>
     {% endfor %}
 
 </main>        
