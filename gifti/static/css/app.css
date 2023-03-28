@@ -1,9 +1,5 @@
 html {
-  background-color: rgb(226, 252, 255);
-  margin-top: 10px;
-  margin-bottom: 10px;
-  margin-left: 5%;
-  margin-right: 5%;
+  background-color: rgb(255, 255, 255);
 }
 
 
@@ -49,9 +45,9 @@ html {
   float: left;
   padding: 1%;
 }
-
 .logo {
   float: left;
+  align-content: center;
 }
 
 .nav-li a {
@@ -60,8 +56,4 @@ html {
   background-color: #96d7de;
   color:white;
   border-radius: 2rem;
-}
-
-.logo-hompage-img {
-  margin-right:11%;
 }
