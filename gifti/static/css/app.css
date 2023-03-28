@@ -1,9 +1,16 @@
+html {
+  background-color: rgb(255, 255, 255);
+}
+
+
+
 .card {
     /* Add shadows to create the "card" effect */
     box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
     transition: 0.3s;
     width:20%;
     align-content: center;
+
 }
 
   /* On mouse-over, add a deeper shadow */
@@ -14,4 +21,39 @@
   /* Add some padding inside the card container */
 .container {
     padding: 2px 16px;
+}
+
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
+
+.slogan {
+  color: rgb(213, 159, 213)
+}
+
+.nav-ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+
+.nav-li {
+  float: left;
+  padding: 2%;
+}
+.logo {
+  float: left;
+  align-content: center;
+}
+
+.nav-li a {
+  display: block;
+  padding: 8px;
+  background-color: #96d7de;
+  color:white;
+  border-radius: 2rem;
 }
