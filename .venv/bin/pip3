@@ -1,4 +1,4 @@
-#!/Users/beibu/Desktop/SWE/gifti/gifti/.venv/bin/python3
+#!/Users/beibu/Desktop/SWE/gifti/gifti/.venv/bin/python3.10
 # -*- coding: utf-8 -*-
 import re
 import sys
