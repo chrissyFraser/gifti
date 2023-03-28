@@ -15,12 +15,18 @@
     <header inline>
         <img class="logo" src=" {% static "images/gifti-logo-22.png" %} " width=100px>
         <ul class="nav-ul">
-            <li class="nav-li"><a href="#home">Home</a></li>
-            <li class="nav-li"><a href="#news">My Wishlist</a></li>
-            <li class="nav-li"><a href="#about">Friend's Wishlists</a></li>
-            <li class="nav-li"><a href="#contact">FAQ & Help</a></li>
+            <li class="nav-li"><a href={% url "homepage" %}>Home</a></li>
+            <li class="nav-li"><a href={% url "wishlist" %}>My Wishlist</a></li>
+            <li class="nav-li"><a href={% url "friendlists" %}>Friend's Wishlists</a></li>
+            <li class="nav-li"><a href={% url "addbrand" %}>Add a Brand</a></li>
+            <li class="nav-li"><a href={% url "addstore" %}>Add a Store</a></li>
+            <li class="nav-li"><a href={% url "login"  %}>Login</a></li>
+            <li class="nav-li"><a href={% url "logout" %}>Logout</a></li>
+            <li class="nav-li"><a href={% url "signup" %}>Signup</a></li>
+            <li class="nav-li"><a href={% url "faq" %}>FAQ & Help</a></li>
         </ul>
     </header>
+    <br>
     <body>
         {% block content %}
         {% endblock %}

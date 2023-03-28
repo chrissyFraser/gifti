@@ -64,3 +64,9 @@ class AddStore(CreateView, LoginRequiredMixin):
 
 class HomepageView(TemplateView):
     template_name = "homepage.html"
+
+class FaqView(TemplateView):
+    template_name = "faq.html"
+
+class FriendListView(TemplateView):
+    template_name = "friendlists.html"
